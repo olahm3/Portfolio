@@ -1,12 +1,61 @@
 <!DOCTYPE html!?>
 <head>
   <title>My Online Portfolio</title> 
-</head>  
+  <meta charset = "UTF-8"> 
+  <meta name= "viewport" content ="width=device-width, initial-scale=1.0">
+  <script scr="https://cdn.jddelivr.net/npm/chart.js"></script>
+  <style>
+    .chart-container{
+      width: 90%;
+      max-width: 800px
+        margin: 30px auto;
+    }
+<style>
+  </head>  
 <body> 
   <h1 style="text-align:center;">My Online Portfolio</h1>
   <p style="text-align:center;"> I'm Olivia and here is my class demo. </p>
 <div style="text-align:center;" class="image">
   <img src ="https://datawrapper.dwcdn.net/Cmn87/1/">
 </div>  
+    <div class= "chart-container">
+    <canvas id=chart></canvas>
+    </div>
+    <script>
+    const ctx=document.getElementById("chart");
+    new Chart(ctx,{
+              type: "line",
+              data: {
+              labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              datasets:[{
+      label: "Coffee Spending",
+        data:[6.00, 12.00, 12.00, 18.00, 18.00],
+
+        borderColor: "#FF0145",
+    backgroundColor: "#E3DCDC",
+    borderWidth:3,
+    fill: true,
+    tension: 0.35,
+    pointRadius: 4
+    pointBackgroundColor: "#FF0145",
+    }]
+    },
+    options:{
+      responsive: true,
+        maintainAspectRatio:true,
+
+    plugins:{
+      legend:{
+        display:true
+      }
+    }, 
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+    }
+    });
+    </script>
 </body>
 </html>

@@ -22,6 +22,9 @@
     <div class= "chart-container">
     <canvas id=chart></canvas>
     </div>
+  <div class="chart-container">
+  <canvas id="barChart"></canvas>
+</div>
     <script>
     const ctx=document.getElementById("chart");
       
@@ -67,8 +70,11 @@
     }
     });
 
-
+const barCtx = document.getElementById("barChart");
       new Chart(barCtx, {
+          <div style="text-align:center;" class="image">
+  <img src ="https://kommodo.ai/i/BePzqrL2fAc5i1F0N0yl">
+</div>  
   type: "bar",
   data: {
     labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
@@ -88,9 +94,7 @@
     }
   }
 });
-                <div style="text-align:center;" class="image">
-  <img src =https://kommodo.ai/i/BePzqrL2fAc5i1F0N0yl">
-</div>  
+    
     }
     }
     });

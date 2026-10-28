@@ -53,6 +53,15 @@
       y: {
         beginAtZero: true
       }
+
+       const ctx=document.getElementById("chart");
+    new Chart(ctx,{
+              type: "bar",
+              data: {
+              labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
+              datasets:[{
+      label: "Grocery Store Spending Fall 26",
+        data:[30.00, 50.00, 45.00, 20.00],
     }
     }
     });

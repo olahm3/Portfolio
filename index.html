@@ -8,6 +8,7 @@
     .chart-container{
       width: 90%;
       max-width: 800px;
+      height:400px;
         margin: 30px auto;
     }
 </style>
@@ -65,43 +66,28 @@
     }
     }
     });
-// Bar Chart
-       const ctx=document.getElementById("barChart");
-    new Chart(ctx,{
-              type: "bar",
-              data: {
-              labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
-              datasets:[{
+
+
+      new Chart(barCtx, {
+  type: "bar",
+  data: {
+    labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
+    datasets: [{
       label: "Grocery Store Spending Fall 26",
-        data:[30.00, 50.00, 45.00, 20.00],
-                backgroundColor: white [
-                  ]
-          borderColor: "black",
-                options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display: true
-          }
-        },
-        scales: {
-          y: {
-            beginAtZero: true,
-            title: {
-              display: true,
-              text: "Amount Spent ($)"
-            }
-          },
-          x: {
-            title: {
-              display: true,
-              text: "Week"
-            }
-          }
-        }
+      data: [30, 50, 45, 20],
+      backgroundColor: "#FF0145"
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      y: {
+        beginAtZero: true
       }
-    });
+    }
+  }
+});
                 <div style="text-align:center;" class="image">
   <img src =https://kommodo.ai/i/BePzqrL2fAc5i1F0N0yl">
 </div>  

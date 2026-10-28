@@ -1,4 +1,4 @@
-<!DOCTYPE html!?>
+<!DOCTYPE html!>
 <head>
   <title>My Online Portfolio</title> 
   <meta charset = "UTF-8"> 
@@ -7,7 +7,7 @@
   <style>
     .chart-container{
       width: 90%;
-      max-width: 800px
+      max-width: 800px;
         margin: 30px auto;
     }
 </style>
@@ -23,6 +23,7 @@
     </div>
     <script>
     const ctx=document.getElementById("chart");
+      
     new Chart(ctx,{
               type: "line",
               data: {
@@ -30,20 +31,18 @@
               datasets:[{
       label: "Grocery Store Spending Fall 26",
         data:[30.00, 50.00, 45.00, 20.00],
-
         borderColor: "black",
     backgroundColor: "white",
     borderWidth:3,
     fill: true,
     tension: 0.35,
-    pointRadius: 4
+    pointRadius: 4,
     pointBackgroundColor: "#FF0145",
     }]
     },
     options:{
       responsive: true,
-        maintainAspectRatio:true,
-
+        maintainAspectRatio:false,
     plugins:{
       legend:{
         display:true
@@ -52,9 +51,22 @@
     scales: {
       y: {
         beginAtZero: true
+        title: {
+        display: true,
+          text: "Amount Spent ($)"
       }
-
-       const ctx=document.getElementById("chart");
+      }
+        x: {
+          title:{
+            display: true,
+            text: "Week"
+          }
+        }
+    }
+    }
+    });
+// Bar Chart
+       const ctx=document.getElementById("barChart");
     new Chart(ctx,{
               type: "bar",
               data: {
@@ -62,6 +74,34 @@
               datasets:[{
       label: "Grocery Store Spending Fall 26",
         data:[30.00, 50.00, 45.00, 20.00],
+                backgroundColor: white [
+                  ]
+          borderColor: "black",
+                options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: true
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: "Amount Spent ($)"
+            }
+          },
+          x: {
+            title: {
+              display: true,
+              text: "Week"
+            }
+          }
+        }
+      }
+    });
                 <div style="text-align:center;" class="image">
   <img src =https://kommodo.ai/i/BePzqrL2fAc5i1F0N0yl">
 </div>  

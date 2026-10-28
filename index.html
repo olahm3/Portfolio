@@ -3,14 +3,14 @@
   <title>My Online Portfolio</title> 
   <meta charset = "UTF-8"> 
   <meta name= "viewport" content ="width=device-width, initial-scale=1.0">
-  <script scr="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
   <style>
     .chart-container{
       width: 90%;
       max-width: 800px
         margin: 30px auto;
     }
-<style>
+</style>
   </head>  
 <body> 
   <h1 style="text-align:center;">My Online Portfolio</h1>
@@ -26,13 +26,13 @@
     new Chart(ctx,{
               type: "line",
               data: {
-              labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
               datasets:[{
-      label: "Coffee Spending",
-        data:[6.00, 12.00, 12.00, 18.00, 18.00],
+      label: "Grocery Store Spending Fall 26",
+        data:[30.00, 50.00, 45.00, 20.00],
 
-        borderColor: "#FF0145",
-    backgroundColor: "#E3DCDC",
+        borderColor: "black",
+    backgroundColor: "white",
     borderWidth:3,
     fill: true,
     tension: 0.35,
